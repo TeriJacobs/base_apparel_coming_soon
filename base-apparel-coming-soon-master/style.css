@@ -1,0 +1,22 @@
+/*for mobile phones*/
+
+@media only screen and (min-width:375px){
+    header{
+        text-align:center;
+        width:100%;
+        padding: 20px;
+    }
+
+    .graphic{
+        text-align:center;
+    }
+}
+
+.content{
+    font-style:italic;
+   
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}

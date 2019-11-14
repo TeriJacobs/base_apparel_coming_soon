@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel = "stylesheet"  type = "text/css"  href = "stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="java"></script>
+</head>
+<body>
+
+  <header>
+    <img class ="logo" src="images/logo.png">
+  </header>
+
+  <section>
+    <img id="img-mobile" src="images/hero-mobile.jpg" alt="mobile">
+    <img id="img-desktop" src="images/hero-desktop.jpg" alt="desktop">
+  </section>
+
+  <div class= "desktop-header">
+      <img class ="logo-desktop" src="images/logo.png">
+  </div>
+
+  <section class="content">
+    
+    <div class="introduction">
+      <h1 class="primary-heading">We're</h1>
+      <h1 class="secondary-heading">coming</h1>
+      <h1 class="secondary-heading">soon</h1>
+    </div>
+
+    <p class="content-discription">
+      Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+    
+
+    <div>
+      <form class="email-form" name="emailForm" onsubmit="return(Validate())">
+        <input id ="email" class="input-email" type="text" name="email" title="Email Address" placeholder="Email Address" > <!--seems liek this is a js swipe script involved-->
+        <button id="submit-btn"class="submit-btn" type="submit"><img class = "submit-btn-arrow" src="images/white-arrow.png"></button> 
+        <img id="error-icon" class="error-icon" src="images/icon-error.svg">
+        <p id="error-msg" class="error-message"></p>
+    </form>
+    </div>
+
+  </section>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Teri Jacobs</a>.
+    </p>
+  </footer>
+  <script src="emailValidation.js"></script>
+</body>
+</html>

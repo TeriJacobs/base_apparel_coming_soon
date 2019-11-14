@@ -1,0 +1,198 @@
+/*Always style your web page for mobile first, thereafter you work your way to a larger screen*/
+
+body{
+    background-color: fff;
+    font-size: 16px;
+    color:hsl(0, 36%, 70%);
+    font-family: Josefin Sans; /*not sure if this has taken affect*/
+    padding:0;
+    margin:0;
+
+}
+
+header{
+    text-align:left;
+    padding:20px;
+}
+
+.logo{
+    width:100px;
+    height:20px;
+    padding: 8px;
+}
+
+.logo-desktop{
+    display:none;
+}
+
+
+#img-mobile{
+    width:100%;
+}
+
+#img-desktop {
+    display:none;}
+
+.content{
+    padding-top: 20px;
+    text-align:center;
+}
+
+.introduction{
+    text-align:center;
+    letter-spacing:2px;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 0.2;
+    text-transform: uppercase;
+}
+
+.secondary-heading{
+    color:hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+.content-discription, .attribution{
+    padding-left:45px;
+    padding-right:45px;
+    font-weight: bold;
+    font-size:12px;
+    line-height:1.5em;
+    
+}
+.email-form{
+    display: inline-block;
+    width:220px;
+    height: 28px;
+    border-radius: 12px;
+    border: 1px solid hsl(0, 36%, 70%);
+    
+}
+
+.input-email{
+    border:transparent;
+    height: 15px;
+    padding-top:7px;
+    font-size: 12px;
+}
+
+.submit-btn{
+    width:40px;
+    height:30px;
+    border: transparent;
+    box-shadow:8px;
+    border-radius: 12px;
+    float: right;
+    background-image: Linear-gradient(to right,	#F8BFBF, #EE8C8C);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.submit-btn-arrow{
+    position:relative;
+    width:25px;
+    height:25px;
+    margin:0;
+
+}
+
+.error-icon{
+    width:12px;
+    height: 12px;
+    visibility:hidden;
+}
+
+.error-message{
+    font-size:14px;
+    text-align: left;
+}
+
+footer{
+    padding-top:30px;
+    text-align:center;
+}
+
+@media only screen and (min-width: 1440px){
+    body{
+        background-image: url("images/bg-pattern-desktop.png");
+    }
+
+    #img-desktop{
+        display: block;
+        float: right;
+        height:100%;
+        width:45%;
+    }
+
+    #img-mobile{
+        display:none;
+    }
+
+    header{
+        display:none;
+    }
+
+    .content {
+        width:50%;
+        padding-top: 110px; 
+       
+    }
+
+    .introduction{
+        text-align: justify;
+        padding-left:140px;
+    }
+
+
+    .primary-heading, .secondary-heading{
+        font-size:70px;
+    }
+
+     .logo-desktop{
+       display:block;
+       width: 120px;
+       padding-left: 140px;
+       padding-top: 60px;
+     }
+
+     .content-discription {
+        padding-top:35px;
+        padding-left:140px;
+        padding-right:100px;
+        justify-content: justify;
+        text-align:justify;
+        font-size: 18px;
+    }
+
+    .email-form{
+        margin-left:140px;
+        padding-left:10px;
+        margin-top:30px;
+        float:left;
+        width: 300px;
+        margin-bottom: 90px;
+
+    }    
+
+    .submit-btn{
+        width:55px;
+        height:32px; 
+    }
+    
+
+    .attribution{
+        padding-top:35px;
+        padding-left:140px;
+        padding-right:100px;
+        justify-content: justify;
+        text-align:justify;
+        font-size: 12px;
+        margin-top:170px;
+        bottom: 0;
+        width: 50%; 
+    }
+}

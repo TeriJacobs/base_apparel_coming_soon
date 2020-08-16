@@ -75,7 +75,7 @@ h1{
 .input-email{
     border:transparent;
     height: 15px;
-    padding-top:7px;
+/*     padding-top:7px; */
     font-size: 12px;
     margin-top:5px;
 }
